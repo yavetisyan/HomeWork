@@ -81,7 +81,7 @@ body {
   font-weight: 400;
   /*font-family: "Montserrat", sans-serif;*/
 }
-section {
+.sec-padding {
   padding: 100px 0;
 }
 #header {
@@ -179,7 +179,7 @@ nav a {
 
 .btn:hover {
   background-color: #fff;
-  color: #000;
+  color: #c0301c;
 }
 /*------------------*/
 
@@ -197,7 +197,7 @@ nav a {
   text-align: center;
   text-transform: uppercase;
   color: #555;
-  padding-bottom: 60px;
+  padding-bottom: 3 0px;
   position: relative;
 }
 
@@ -218,6 +218,7 @@ nav a {
   font-size: 16px;
   line-height: 24px;
   font-family: "Roboto Slab", serif;
+  padding-top: 60px;
 }
 
 .services__inner {
@@ -398,4 +399,134 @@ button.slick-disabled {
 .about__images:hover .about__images-soc {
   opacity: 1;
   bottom: 20px;
+}
+
+/*-------------*/
+/*latest works*/
+
+.works__title-lists {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.works__title {
+  padding-bottom: 70px;
+}
+.works__title-lists li + li {
+  margin-left: 30px;
+}
+.works__title-links {
+  color: #555;
+  transition: all 0.5s;
+}
+
+.works__title-links:hover,
+.works__title-links.active {
+  color: #c0301c;
+}
+
+.works__pics {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -20px;
+}
+.works__pics-title {
+  margin-bottom: 30px;
+
+  background-color: #c0301c;
+  width: 360px;
+  height: 320px;
+  position: relative;
+}
+.works__pics-title img {
+  transition: all 0.5s;
+}
+
+.works__pics-title:hover img {
+  opacity: 0.3;
+}
+
+.works__pics-hover {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 360px;
+  height: 320px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+
+  transition: all 0.5s;
+}
+
+.works__pics-hover h4 {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+.works__pics-hover p {
+  font-size: 12px;
+  line-height: 24px;
+  color: #fff;
+  margin: 15px 0 25px;
+}
+
+.works__pics-hover a {
+  padding: 15px 20px;
+  background-color: #fff;
+  color: #c0301c;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 24px;
+  font-size: 16px;
+  vertical-align: middle;
+  border: 2px solid #fff;
+
+  transition: all 0.5s;
+}
+
+.works__pics-hover a::after {
+  content: ">";
+  font-size: 25px;
+  padding-left: 6px;
+}
+
+.works__pics-hover a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.works__pics-title:hover .works__pics-hover {
+  opacity: 1;
+}
+
+/*--------------------*/
+/*our__work*/
+
+#our__work {
+  min-height: 370px;
+  max-width: 100%;
+  background: url(../img/our-work.jpg) no-repeat center center;
+  background-size: cover;
+  display: block;
+  background-color: #c0301c;
+}
+
+.our__work-title {
+  width: 470px;
+  text-align: center;
+  margin: 0 auto;
+}
+.our__work-text {
+  font-size: 30px;
+  line-height: 44px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
 }
